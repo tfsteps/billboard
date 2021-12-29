@@ -1,0 +1,461 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	.header {
+		width: ;
+		height: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		background: #c5c5c5;
+		display: flex;
+		font-family: arial;
+	}
+
+	.charts-conatiner {
+		width: 700px;
+		height: 780px;
+		margin-left: auto;
+		margin-right: auto;
+		background: none;
+		font-family: arial;
+	}
+
+	.header-center {
+		width: 700px;
+		height: 50px;
+		background: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+
+	.charts-sort {
+		width: 700px;
+		height: 50px;
+		background: none;
+		margin-top: 5px;
+		display: flex;
+	}
+
+	.charts-up {
+		width: 700px;
+		height: 90px;
+		background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,218,41,1) 0%, rgba(0,220,255,1) 100%);
+		margin-top: 10px;
+		display: flex;
+		border-radius: 5px;
+
+	}
+
+	.charts-new {
+		width: 700px;
+		height: 90px;
+		background: rgb(25,0,36);
+background: linear-gradient(90deg, rgba(25,0,36,1) 0%, rgba(255,236,125,1) 0%, rgba(254,151,41,1) 100%);
+		margin-top: 10px;
+		display: flex;
+		border-radius: 5px;
+	}
+
+	.charts-down {
+		width: 700px;
+		height: 90px;
+		background: rgb(25,0,36);
+background: linear-gradient(90deg, rgba(25,0,36,1) 0%, rgba(166,68,68,1) 0%, rgba(208,96,218,0.8242647400757178) 0%, rgba(119,41,254,1) 100%);
+		margin-top: 10px;
+		display: flex;
+		border-radius: 5px;
+	}
+
+	.box-logo {
+		height: 50px;
+		width: 120px;
+		background: none;
+		
+	}
+
+	.box-links {
+		height: 50px;
+		width: 490px;
+		background: none;
+		margin-top: 17px;
+	}
+
+	.box-buttons {
+		height: 50px;
+		width: 90px;
+		background: none;
+		
+	}
+
+	.charts-rank {
+		height: 90px;
+		width: 80px;
+		background: none;
+		text-align: center;
+	}
+
+	.charts-info {
+		height: 90px;
+		width: 430px;
+		background: none;
+	}
+
+	.charts-button {
+		height: 90px;
+		width: 120px;
+		background: none;
+	}
+
+	.charts-img {
+		height: 90px;
+		width: 70px;
+		background: none;
+	}
+
+	.img-size {
+		width: 70px;
+		height: 70px;
+		margin-top: 10px;
+	}
+
+	.btn-blue {
+		width: 105px;
+		background: #00c8ff;
+		margin-top: 10px;
+		color: white;
+		border-radius: 5px;
+		border-color: #00c8ff;
+	}
+
+	.btn-green {
+		width: 80px;
+		background: #00e099;
+		margin-top: 10px;
+		color: white;
+		border-radius: 5px;
+		border-color: #00e099
+	}
+
+	.text-gray {
+		color: gray;
+		font-size: 13px;
+		font: weight 900;
+
+	}
+
+	.text-blue {
+		color: darkblue;
+		font: weight: 200
+	}
+
+	.text-up {
+		color: green;
+		font-size: 14px;
+		margin-top: -8px;
+	}
+
+	.text-new {
+		color: orange;
+		font-size: 14px;
+		margin-top: -8px;
+	}
+
+	.text-down {
+		color: red;
+		font-size: 14px;
+		margin-top: -8px;
+	}
+
+	.btn1 {
+		width: 90px;
+		height: 25px;
+		font-size: 12px;
+		color: white;
+		border-radius: 3px;
+		background: orange;
+		margin-top: 12px;
+		border-color: orange;
+	}
+
+	.btn2 {
+		width: 90px;
+		height: 25px;
+		font-size: 12px;
+		color: white;
+		border-radius: 3px;
+		background: red;
+		margin-top: 12px;
+		margin-left: 3px;
+		border-color: red;
+	}
+
+	.btn3 {
+		width: 90px;
+		height: 25px;
+		font-size: 12px;
+		color: white;
+		border-radius: 3px;
+		background: green;
+		margin-top: 12px;
+		margin-left: 3px;
+		border-color: green;
+	}
+
+	.btn4 {
+		width: 90px;
+		height: 25px;
+		font-size: 12px;
+		color: white;
+		border-radius: 3px;
+		background: purple;
+		margin-top: 12px;
+		margin-left: 3px;
+		border-color: purple;
+	}
+
+	.logo {
+		width: 120px;
+		margin-top: 10px;
+	}
+
+	.links {
+		margin-left: 50px;
+		color: white;
+		font-size: 12px;
+		transition: color 1s;
+	}
+
+	.links-photo {
+		color: orange;
+		margin-left: 50px;
+		font-size: 12px;
+	}
+
+	.links:hover {
+		color: red;
+	}
+
+
+	
+
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.svg" class="logo">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a href="" class="links">CHARTS</a>
+			<a href="" class="links">NEWS</a>
+			<a href="" class="links">VIDEO</a>
+			<a href="" class="links-photo">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="btn4">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-conatiner">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="btn1">THIS WEEK</button>
+		<button class="btn2">LAST WEEK</button>
+		<button class="btn3">PEAK</button>
+		<button class="btn4">OURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>1</h2>
+			<h4 class="text-up">Up</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Reaction</p>
+			<p class="text-gray">James Landino feat. Slyleaf</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="http://p1.music.126.net/q3ecsO5sTL81t0F-_SLtOA==/109951164958938408.jpg" class="img-size">
+			
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>2</h2>
+			<h4 class="text-new">New</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Miracle</p>
+			<p class="text-gray">The Score</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="https://avatars.yandex.net/get-music-content/2480468/bf3e1d5b.a.4742711-2/m1000x1000?webp=false" class="img-size">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new ">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>3</h2>
+			<h4 class="text-new">New</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Legend</p>
+			<p class="text-gray">The Score</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="maxresdefault.jpg" class="img-size">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>4</h2>
+			<h4 class="text-up">Up</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Lone Digger</p>
+			<p class="text-gray">CaravanPalace</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="https://pp.userapi.com/c629217/v629217608/24400/MFuaU0uju58.jpg" class="img-size">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>5</h2>
+			<h4 class="text-down">Down</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Hidamari no Uta</p>
+			<p class="text-gray">Yuyoyuppe</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="uta.jpg" class="img-size">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>6</h2>
+			<h4 class="text-new">New</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Freestyler</p>
+			<p class="text-gray">Bomfunk MC"s</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="https://st2.liveonce.ru/files/610/1b43914f3e2e/audio/jpg/1585e4675e9e521a5_12782305.jpg" class="img-size">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h2>7</h2>
+			<h4 class="text-up">Up</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="text-blue">Cold</p>
+			<p class="text-gray">Romen Jewels feat. Raddix & Dubbygotbars</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btn-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="https://avatars.yandex.net/get-music-content/103235/c9e91212.a.8482242-1/m1000x1000?webp=false" class="img-size">
+		</div>		
+	</div>
+</div>
+<!--  
+1.Savage Love (Laxed - Siren Beat)
+Jaws 685 x Jason Derulo x BTS
+
+2.Dynamite
+BTS
+
+3.WAP
+Cardi B featuring Megan Thee Stallion
+
+4.Mood
+24kGoldn featuring iann dior
+
+5.Laugh Now Cry Later
+Drake featuring Lil Durk
+
+6.Blinding Lights
+The Weekend
+
+7.Rockstar
+DaBaby Featuring Roddy Ricch
+-->
